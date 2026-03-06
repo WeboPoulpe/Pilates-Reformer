@@ -131,6 +131,20 @@ export default function Footer() {
             </Link>
           </div>
         </div>
+
+        <div className="mt-6 text-center">
+          <p className="text-[11px] text-beige-400/30 font-light">
+            Site concu et developpe par{" "}
+            <a
+              href="https://webomax.fr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold-400/50 hover:text-gold-400 transition-colors duration-300"
+            >
+              Webomax
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
