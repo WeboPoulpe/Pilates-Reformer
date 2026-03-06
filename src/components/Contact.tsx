@@ -95,15 +95,17 @@ export default function Contact() {
           </FadeIn>
 
           <FadeIn direction="right">
-            <div className="bg-beige-100/40 rounded-3xl overflow-hidden min-h-[500px] flex items-center justify-center border border-beige-200/30">
-              <div className="text-center p-12">
-                <svg className="w-20 h-20 mx-auto text-gold-400/20 mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.8} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.8} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <p className="font-serif text-xl text-charcoal-light/30 italic mb-3">Google Maps</p>
-                <p className="font-sans text-xs text-charcoal-light/25">Integrez votre iframe ici</p>
-              </div>
+            <div className="rounded-3xl overflow-hidden min-h-[500px] border border-beige-200/30">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.5!2d3.9442!3d43.6167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6b0c5e5a5a5a5%3A0x0!2sMauguio%2C+Zone+A%C3%A9roport+Fr%C3%A9jorgues%2C+34130!5e0!3m2!1sfr!2sfr!4v1709740800000!5m2!1sfr!2sfr"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: "500px" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Yanna Pilates Studio - Mauguio Zone Aeroport Frejorgues"
+              />
             </div>
           </FadeIn>
         </div>
