@@ -1,19 +1,50 @@
 "use client";
 
+import { useState } from "react";
 import SectionHeader from "./SectionHeader";
 import { FadeIn, StaggerContainer, StaggerItem } from "./motion";
 
 const abonnements = [
-  { freq: "1 cours / semaine", price: "104", period: "/mois", popular: false },
-  { freq: "2 cours / semaine", price: "192", period: "/mois", popular: true },
-  { freq: "3 cours / semaine", price: "264", period: "/mois", popular: false },
+  { freq: "1 cours / semaine", price: "104", period: "/mois", popular: false, type: "ABONNEMENT_8" },
+  { freq: "2 cours / semaine", price: "192", period: "/mois", popular: true, type: "ABONNEMENT_12" },
+  { freq: "3 cours / semaine", price: "264", period: "/mois", popular: false, type: "ABONNEMENT_16" },
 ];
 
 const cartes = [
-  { label: "Cours a l'unite", price: "30", detail: "Ideal pour decouvrir", stripeLink: "#" },
-  { label: "Carnet 5 cours", price: "135", detail: "27 par seance", stripeLink: "#" },
-  { label: "Carnet 10 cours", price: "250", detail: "25 par seance", stripeLink: "#" },
+  { label: "Cours a l'unite", price: "30", detail: "Ideal pour decouvrir", type: "SINGLE" },
+  { label: "Carnet 5 cours", price: "135", detail: "27 par seance", type: "PACK_5" },
+  { label: "Carnet 10 cours", price: "250", detail: "25 par seance", type: "PACK_10" },
 ];
+
+function PayButton({ type, label, className }: { type: string; label: string; className: string }) {
+  const [loading, setLoading] = useState(false);
+
+  const handleClick = async () => {
+    setLoading(true);
+    try {
+      const res = await fetch("/api/stripe/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type }),
+      });
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        alert(data.error || "Veuillez vous connecter pour effectuer un paiement.");
+      }
+    } catch {
+      alert("Erreur lors de la connexion au service de paiement.");
+    }
+    setLoading(false);
+  };
+
+  return (
+    <button onClick={handleClick} disabled={loading} className={className}>
+      {loading ? "Chargement..." : label}
+    </button>
+  );
+}
 
 export default function Tarifs() {
   return (
@@ -69,16 +100,15 @@ export default function Tarifs() {
                     </li>
                   ))}
                 </ul>
-                <a
-                  href="#"
-                  className={`inline-block w-full py-4 font-sans text-xs font-semibold uppercase tracking-[3px] rounded-xl transition-all duration-300 ${
+                <PayButton
+                  type={abo.type}
+                  label="S'abonner"
+                  className={`inline-block w-full py-4 font-sans text-xs font-semibold uppercase tracking-[3px] rounded-xl transition-all duration-300 disabled:opacity-50 ${
                     abo.popular
                       ? "bg-gold-500 text-white hover:bg-gold-600"
                       : "bg-charcoal text-white hover:bg-charcoal/90"
                   }`}
-                >
-                  S&apos;abonner
-                </a>
+                />
               </div>
             </StaggerItem>
           ))}
@@ -110,12 +140,11 @@ export default function Tarifs() {
                   <span className="font-sans text-xl text-charcoal-light/50">&euro;</span>
                 </div>
                 <p className="font-sans text-xs text-charcoal-light/40 mb-10">{carte.detail}</p>
-                <a
-                  href={carte.stripeLink}
-                  className="inline-block w-full py-4 border border-charcoal/15 font-sans text-xs font-semibold uppercase tracking-[3px] text-charcoal hover:bg-charcoal hover:text-white rounded-xl transition-all duration-300"
-                >
-                  Payer en ligne
-                </a>
+                <PayButton
+                  type={carte.type}
+                  label="Payer en ligne"
+                  className="inline-block w-full py-4 border border-charcoal/15 font-sans text-xs font-semibold uppercase tracking-[3px] text-charcoal hover:bg-charcoal hover:text-white rounded-xl transition-all duration-300 disabled:opacity-50"
+                />
               </div>
             </StaggerItem>
           ))}

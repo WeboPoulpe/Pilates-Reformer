@@ -1,48 +1,46 @@
 import "dotenv/config";
-import { PrismaClient } from "../src/generated/prisma/client";
-import { PrismaPg } from "@prisma/adapter-pg";
-import pg from "pg";
+import { neon } from "@neondatabase/serverless";
 import bcrypt from "bcryptjs";
 
-const pool = new pg.Pool({ connectionString: process.env.DATABASE_URL });
-const adapter = new PrismaPg(pool);
-const prisma = new PrismaClient({ adapter });
+const sql = neon(process.env.DATABASE_URL!);
 
 async function main() {
   const hashedPassword = await bcrypt.hash("admin123", 12);
 
-  const admin = await prisma.user.upsert({
-    where: { email: "priscillia.saihi@hotmail.fr" },
-    update: {},
-    create: {
-      email: "priscillia.saihi@hotmail.fr",
-      name: "Priscillia Bunoust",
-      password: hashedPassword,
-      role: "ADMIN",
-      phone: "+33699101741",
-    },
-  });
+  // Seed admin user
+  await sql`
+    INSERT INTO "User" (id, email, name, password, role, phone, "createdAt", "updatedAt")
+    VALUES (
+      'admin-priscillia',
+      'priscillia.saihi@hotmail.fr',
+      'Priscillia Bunoust',
+      ${hashedPassword},
+      'ADMIN',
+      '+33699101741',
+      NOW(),
+      NOW()
+    )
+    ON CONFLICT (email) DO NOTHING
+  `;
+  console.log("Admin created: priscillia.saihi@hotmail.fr");
 
-  console.log("Admin created:", admin.email);
-
+  // Seed course types
   const courseTypes = [
-    { name: "Pilates Reformer Groupe", duration: 55, maxPersons: 6, price: 26 },
-    { name: "Seance Privee", duration: 55, maxPersons: 2, price: 55 },
-    { name: "Duo Reformer", duration: 55, maxPersons: 2, price: 40 },
+    { id: "pilates-reformer-groupe", name: "Pilates Reformer Groupe", duration: 55, maxPersons: 6, price: 26 },
+    { id: "seance-privee", name: "Seance Privee", duration: 55, maxPersons: 2, price: 55 },
+    { id: "duo-reformer", name: "Duo Reformer", duration: 55, maxPersons: 2, price: 40 },
   ];
 
   for (const ct of courseTypes) {
-    await prisma.courseType.upsert({
-      where: { id: ct.name.toLowerCase().replace(/\s+/g, "-") },
-      update: ct,
-      create: { id: ct.name.toLowerCase().replace(/\s+/g, "-"), ...ct },
-    });
+    await sql`
+      INSERT INTO "CourseType" (id, name, duration, "maxPersons", price, "createdAt")
+      VALUES (${ct.id}, ${ct.name}, ${ct.duration}, ${ct.maxPersons}, ${ct.price}, NOW())
+      ON CONFLICT (id) DO UPDATE SET name = ${ct.name}, duration = ${ct.duration}, "maxPersons" = ${ct.maxPersons}, price = ${ct.price}
+    `;
     console.log("Course type created:", ct.name);
   }
+
+  console.log("Seed complete!");
 }
 
-main()
-  .catch(console.error)
-  .finally(async () => {
-    await pool.end();
-  });
+main().catch(console.error);
