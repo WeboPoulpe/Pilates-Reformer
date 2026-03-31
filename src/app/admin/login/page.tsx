@@ -35,7 +35,7 @@ export default function AdminLogin() {
     <div className="min-h-screen flex items-center justify-center bg-beige-50 px-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-10">
-          <Image src="/logo.jpeg" alt="Yanna Pilates" width={80} height={80} className="mx-auto rounded-2xl mb-6" />
+          <Image src="/logo.webp" alt="Yanna Pilates" width={80} height={80} className="mx-auto rounded-2xl mb-6" />
           <h1 className="font-serif text-3xl font-semibold text-charcoal">Administration</h1>
           <p className="font-sans text-sm text-charcoal-light/50 mt-2">Connectez-vous a votre espace admin</p>
         </div>

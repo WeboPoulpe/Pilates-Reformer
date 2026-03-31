@@ -38,7 +38,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-8 md:px-12 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/logo.jpeg"
+            src="/logo.webp"
             alt="Yanna Pilates Studio"
             width={48}
             height={48}

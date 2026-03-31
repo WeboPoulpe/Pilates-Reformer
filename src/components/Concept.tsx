@@ -41,7 +41,7 @@ export default function Concept() {
           <div className="flex flex-col md:flex-row items-center gap-10 justify-center">
             <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-gold-400/20 shrink-0 relative">
               <Image
-                src="/images/studio-12.jpeg"
+                src="/images/studio-12.webp"
                 alt="Priscillia Bunoust - Fondatrice de Yanna Pilates Studio"
                 fill
                 className="object-cover"
@@ -74,7 +74,7 @@ export default function Concept() {
         <FadeIn delay={0.1} className="mt-28">
           <div className="rounded-3xl overflow-hidden bg-beige-100/50 aspect-[21/9] relative border border-beige-200/30">
             <Image
-              src="/images/studio-4.jpeg"
+              src="/images/studio-4.webp"
               alt="Interieur du studio Yanna Pilates - Reformers et design beige"
               fill
               className="object-cover"
@@ -86,7 +86,7 @@ export default function Concept() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="rounded-3xl overflow-hidden aspect-[4/3] relative border border-beige-200/30">
               <Image
-                src="/images/studio-5.jpeg"
+                src="/images/studio-5.webp"
                 alt="Bar a Matcha et reception - Yanna Pilates Studio"
                 fill
                 className="object-cover"
@@ -94,7 +94,7 @@ export default function Concept() {
             </div>
             <div className="rounded-3xl overflow-hidden aspect-[4/3] relative border border-beige-200/30">
               <Image
-                src="/images/studio-10.jpeg"
+                src="/images/studio-10.webp"
                 alt="Salle de Pilates Reformer avec equipements - Yanna Pilates"
                 fill
                 className="object-cover"

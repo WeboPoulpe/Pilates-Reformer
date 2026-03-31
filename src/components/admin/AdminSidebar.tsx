@@ -20,7 +20,7 @@ export default function AdminSidebar({ user }: { user: { name?: string | null; e
     <aside className="w-72 bg-white border-r border-beige-200/30 flex flex-col">
       <div className="p-8 border-b border-beige-200/30">
         <Link href="/admin" className="flex items-center gap-4">
-          <Image src="/logo.jpeg" alt="Yanna Pilates" width={44} height={44} className="rounded-xl" />
+          <Image src="/logo.webp" alt="Yanna Pilates" width={44} height={44} className="rounded-xl" />
           <div>
             <p className="font-serif text-lg font-semibold text-charcoal">Yanna Pilates</p>
             <p className="font-sans text-[10px] uppercase tracking-[2px] text-gold-500">Administration</p>

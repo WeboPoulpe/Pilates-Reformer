@@ -11,7 +11,7 @@ const cours = [
     desc: "Seances dynamiques en petit groupe sur machines Reformer. Renforcement musculaire profond, amelioration de la posture et de la souplesse.",
     forWho: "Tous niveaux",
     duration: "55 min",
-    image: "/images/studio-7.jpeg",
+    image: "/images/studio-7.webp",
     alt: "Cours de Pilates Reformer en groupe - Yanna Pilates Studio Mauguio",
   },
   {
@@ -20,7 +20,7 @@ const cours = [
     desc: "Un accompagnement sur-mesure avec votre instructrice. Programme adapte a vos objectifs : remise en forme, reeducation, performance.",
     forWho: "Sur mesure",
     duration: "55 min",
-    image: "/images/studio-2.jpeg",
+    image: "/images/studio-2.webp",
     alt: "Seance privee de Pilates Reformer - Yanna Pilates Studio",
   },
   {
@@ -29,7 +29,7 @@ const cours = [
     desc: "Partagez un moment privilegie a deux. Ideal entre amies, en couple ou mere-fille. Progressez ensemble dans une atmosphere intime.",
     forWho: "Tous niveaux",
     duration: "55 min",
-    image: "/images/studio-8.jpeg",
+    image: "/images/studio-8.webp",
     alt: "Seance duo Pilates Reformer - Yanna Pilates Studio",
   },
 ];

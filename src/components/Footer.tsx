@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Image
-              src="/logo.jpeg"
+              src="/logo.webp"
               alt="Yanna Pilates Studio"
               width={120}
               height={120}

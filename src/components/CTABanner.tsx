@@ -8,7 +8,7 @@ export default function CTABanner() {
   return (
     <section className="relative py-28 md:py-36 overflow-hidden">
       <Image
-        src="/images/studio-9.jpeg"
+        src="/images/studio-9.webp"
         alt="Ambiance zen - Yanna Pilates Studio"
         fill
         className="object-cover"
