@@ -17,8 +17,8 @@ const features = [
   },
   {
     icon: "M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z",
-    title: "Bar a Matcha",
-    desc: "Un espace detente avec boissons bien-etre et matcha premium apres votre seance.",
+    title: "Espace Detente",
+    desc: "Prolongez l'experience dans notre espace dedie. Large selection de boissons Bio, infusions et jus naturels pour une recuperation optimale.",
   },
   {
     icon: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z",
@@ -42,15 +42,14 @@ export default function Concept() {
             <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-gold-400/20 shrink-0 relative">
               <Image
                 src="/images/studio-12.webp"
-                alt="Priscillia Bunoust - Fondatrice de Yanna Pilates Studio"
+                alt="Fondatrice de Yanna Pilates Studio"
                 fill
                 className="object-cover"
               />
             </div>
             <p className="font-sans text-base md:text-lg text-charcoal-light/70 font-light leading-[1.9] max-w-xl text-center md:text-left">
-              Fonde par <strong className="font-medium text-charcoal">Priscillia Bunoust</strong>,
-              Yanna Pilates Studio propose une approche personnalisee du mouvement en petit groupe
-              (4 a 6 personnes) ou en seance privee. Un lieu ou corps et esprit se reconnectent.
+              Yanna Pilates Studio propose une approche personnalisee du mouvement
+              en seance collective ou privee. Un lieu ou corps et esprit se reconnectent.
             </p>
           </div>
         </FadeIn>
@@ -87,7 +86,7 @@ export default function Concept() {
             <div className="rounded-3xl overflow-hidden aspect-[4/3] relative border border-beige-200/30">
               <Image
                 src="/images/studio-5.webp"
-                alt="Bar a Matcha et reception - Yanna Pilates Studio"
+                alt="Espace Detente et reception - Yanna Pilates Studio"
                 fill
                 className="object-cover"
               />
@@ -100,6 +99,15 @@ export default function Concept() {
                 className="object-cover"
               />
             </div>
+          </div>
+        </FadeIn>
+
+        {/* Bandeau hygiene */}
+        <FadeIn delay={0.2} className="mt-20">
+          <div className="rounded-2xl bg-[#f5f5dc]/60 border border-[#d4af37]/20 px-8 py-6 text-center">
+            <p className="font-sans text-sm text-charcoal font-medium">
+              Pour votre confort et l&apos;hygiene des machines, le port de chaussettes est obligatoire au sein du studio.
+            </p>
           </div>
         </FadeIn>
       </div>

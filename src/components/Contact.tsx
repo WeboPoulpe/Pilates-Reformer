@@ -123,7 +123,7 @@ export default function Contact() {
             email: "priscillia.saihi@hotmail.fr",
             address: { "@type": "PostalAddress", streetAddress: "Zone Aeroport / Frejorgues", addressLocality: "Mauguio", postalCode: "34130", addressCountry: "FR" },
             openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "08:00", closes: "20:00" }],
-            founder: { "@type": "Person", name: "Priscillia Bunoust" },
+            founder: { "@type": "Organization", name: "Yanna Pilates Studio" },
             priceRange: "$$",
             areaServed: ["Mauguio", "Baillargues", "Vendargues", "Mudaison", "Lansargues", "Candillargues", "Montpellier"],
           }),

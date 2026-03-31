@@ -4,7 +4,7 @@ import CityPage from "@/components/CityPage";
 export const metadata: Metadata = {
   title: "Pilates Reformer Lansargues | Studio Yanna Pilates",
   description:
-    "Studio de Pilates Reformer pres de Lansargues. Cours en petit groupe et seances privees a Mauguio, a quelques minutes de Lansargues. Parking gratuit.",
+    "Studio de Pilates Reformer pres de Lansargues. Cours collectifs et seances privees a Mauguio, a quelques minutes de Lansargues. Parking gratuit.",
   keywords: ["Pilates Reformer Lansargues", "Pilates Lansargues", "studio Pilates pres Lansargues"],
 };
 
@@ -14,7 +14,7 @@ export default function PilatesLansargues() {
       city="Lansargues"
       slug="pilates-reformer-lansargues"
       distance="10 minutes"
-      description="Depuis Lansargues, accedez en 10 minutes a Yanna Pilates Studio, votre studio de Pilates Reformer haut de gamme a Mauguio. Cours en petit groupe, seances privees et un cadre zen pour votre bien-etre."
+      description="Depuis Lansargues, accedez en 10 minutes a Yanna Pilates Studio, votre studio de Pilates Reformer haut de gamme a Mauguio. Cours collectifs, seances privees et un cadre zen pour votre bien-etre."
       localInfo="Lansargues se trouve a seulement 10 minutes de notre studio. Les habitantes de Lansargues choisissent Yanna Pilates pour la qualite de l'enseignement, l'ambiance intimiste et la facilite d'acces avec parking gratuit."
       faqItems={[
         {

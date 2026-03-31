@@ -17,31 +17,37 @@ export default function Hero() {
         priority
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-beige-100/85 via-beige-50/80 to-beige-200/90" />
+      <div className="absolute inset-0 bg-stone-900/20" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-8 md:px-12 py-40 text-center">
-        <motion.span
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease }}
-          className="inline-block font-sans text-[11px] font-semibold uppercase tracking-[6px] text-gold-500 mb-10"
+          className="mb-10"
         >
-          Studio Pilates Reformer &mdash; Mauguio
-        </motion.span>
+          <Image
+            src="/logo.webp"
+            alt="Yanna Pilates Studio"
+            width={120}
+            height={120}
+            className="mx-auto rounded-sm"
+          />
+        </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15, ease }}
-          className="font-serif text-5xl md:text-7xl lg:text-8xl font-light leading-[1.05] text-charcoal mb-10"
+          className="font-serif text-5xl md:text-7xl lg:text-8xl font-light leading-[1.05] text-white mb-10"
         >
-          Le mouvement <br />
-          <span className="font-semibold italic bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
+          Le mouvement{" "}
+          <span className="font-semibold italic text-[#d4af37]">
             conscient,
           </span>
           <br />
           le renforcement{" "}
-          <span className="font-semibold italic bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
+          <span className="font-semibold italic text-[#d4af37]">
             profond.
           </span>
         </motion.h1>
@@ -50,10 +56,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.35, ease }}
-          className="font-sans text-lg md:text-xl text-charcoal-light/70 font-light leading-relaxed max-w-2xl mx-auto mb-14"
+          className="font-sans text-base md:text-lg text-white/80 font-light leading-relaxed max-w-3xl mx-auto mb-14"
         >
-          Decouvrez le Pilates Reformer a Mauguio. Un studio haut de gamme dedie
-          a votre bien-etre, votre posture et votre vitalite.
+          Bienvenue chez Yanna Pilates Studio, votre nouvel espace exclusif dedie au bien-etre
+          et a la performance a Mauguio. Notre studio propose une approche moderne et technique
+          du Pilates Reformer, concue pour sculpter le corps, renforcer les muscles profonds et
+          ameliorer la posture durablement. Dans un cadre serein et epure, nous mettons notre
+          expertise au service de votre vitalite pour une experience de mouvement unique.
         </motion.p>
 
         <motion.div
@@ -63,14 +72,14 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-5 justify-center"
         >
           <Link
-            href="/tarifs"
-            className="inline-flex items-center justify-center px-10 py-5 bg-gold-500 text-white font-sans text-xs font-semibold uppercase tracking-[3px] hover:bg-gold-600 transition-colors duration-300 shadow-lg shadow-gold-400/20"
+            href="/contact"
+            className="inline-flex items-center justify-center px-10 py-5 bg-[#f5f5dc] text-[#4a3728] border border-[#d4af37] font-sans text-xs font-semibold uppercase tracking-[3px] hover:bg-[#d4af37] hover:text-white transition-all duration-300"
           >
-            Reserver ma seance decouverte
+            Faire une demande
           </Link>
           <Link
             href="/concept"
-            className="inline-flex items-center justify-center px-10 py-5 border border-charcoal/15 text-charcoal font-sans text-xs font-semibold uppercase tracking-[3px] hover:bg-charcoal hover:text-white transition-all duration-300"
+            className="inline-flex items-center justify-center px-10 py-5 border border-white/30 text-white font-sans text-xs font-semibold uppercase tracking-[3px] hover:bg-white hover:text-charcoal transition-all duration-300"
           >
             Decouvrir le studio
           </Link>
@@ -84,15 +93,15 @@ export default function Hero() {
           className="mt-28 flex flex-wrap justify-center gap-16 md:gap-24"
         >
           {[
-            { value: "4-6", label: "personnes max par cours" },
-            { value: "55", label: "minutes par seance" },
+            { value: "3", label: "cours differents" },
             { value: "6j/7", label: "du lundi au samedi" },
+            { value: "100%", label: "sur Reformer" },
           ].map((stat, i) => (
             <div key={i} className="text-center">
-              <p className="font-serif text-4xl md:text-5xl font-bold bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
+              <p className="font-serif text-4xl md:text-5xl font-bold text-[#d4af37]">
                 {stat.value}
               </p>
-              <p className="font-sans text-[10px] uppercase tracking-[3px] text-charcoal-light/50 mt-3">
+              <p className="font-sans text-[10px] uppercase tracking-[3px] text-white/50 mt-3">
                 {stat.label}
               </p>
             </div>
@@ -107,7 +116,7 @@ export default function Hero() {
         transition={{ delay: 1.2, duration: 1 }}
         className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
       >
-        <span className="font-sans text-[10px] uppercase tracking-[4px] text-charcoal-light/30">Scroll</span>
+        <span className="font-sans text-[10px] uppercase tracking-[4px] text-white/30">Scroll</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}

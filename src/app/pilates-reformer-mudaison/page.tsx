@@ -4,7 +4,7 @@ import CityPage from "@/components/CityPage";
 export const metadata: Metadata = {
   title: "Pilates Reformer Mudaison | Studio Yanna Pilates",
   description:
-    "Studio de Pilates Reformer pres de Mudaison. Cours en petit groupe et seances privees a Mauguio, a quelques minutes de Mudaison. Parking gratuit.",
+    "Studio de Pilates Reformer pres de Mudaison. Cours collectifs et seances privees a Mauguio, a quelques minutes de Mudaison. Parking gratuit.",
   keywords: ["Pilates Reformer Mudaison", "Pilates Mudaison", "studio Pilates pres Mudaison"],
 };
 
@@ -14,7 +14,7 @@ export default function PilatesMudaison() {
       city="Mudaison"
       slug="pilates-reformer-mudaison"
       distance="7 minutes"
-      description="Habitants de Mudaison, decouvrez le Pilates Reformer dans un studio haut de gamme a seulement 7 minutes de chez vous. Yanna Pilates Studio vous accueille pour des cours en petit groupe et des seances sur mesure."
+      description="Habitants de Mudaison, decouvrez le Pilates Reformer dans un studio haut de gamme a seulement 7 minutes de chez vous. Yanna Pilates Studio vous accueille pour des cours collectifs et des seances sur mesure."
       localInfo="Mudaison est idealement situee a 7 minutes de notre studio de Mauguio. Les pratiquantes de Mudaison beneficient d'un acces rapide via les routes locales, d'un parking gratuit et d'un studio equipe de Reformers de derniere generation."
       faqItems={[
         {
@@ -23,7 +23,7 @@ export default function PilatesMudaison() {
         },
         {
           question: "Le Pilates Reformer convient-il aux seniors de Mudaison ?",
-          answer: "Oui, le Pilates Reformer est particulierement adapte aux seniors. Il permet de travailler la mobilite, l'equilibre et le renforcement musculaire en douceur. Priscillia adapte chaque exercice a votre niveau.",
+          answer: "Oui, le Pilates Reformer est particulierement adapte aux seniors. Il permet de travailler la mobilite, l'equilibre et le renforcement musculaire en douceur. Votre instructrice adapte chaque exercice a votre niveau.",
         },
         {
           question: "Quels jours sont disponibles pour les cours depuis Mudaison ?",

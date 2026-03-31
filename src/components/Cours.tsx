@@ -6,31 +6,34 @@ import { FadeIn, StaggerContainer, StaggerItem } from "./motion";
 
 const cours = [
   {
-    title: "Pilates Reformer Groupe",
-    subtitle: "4 a 6 personnes",
-    desc: "Seances dynamiques en petit groupe sur machines Reformer. Renforcement musculaire profond, amelioration de la posture et de la souplesse.",
+    title: "L'Integral",
+    subtitle: "Cours complet",
+    desc: "Le cours complet pour sculpter, renforcer et allonger le corps en profondeur. Le rendez-vous essentiel de la semaine. On alterne travail de renforcement profond, controle et mobilite.",
     forWho: "Tous niveaux",
-    duration: "55 min",
     image: "/images/studio-7.webp",
-    alt: "Cours de Pilates Reformer en groupe - Yanna Pilates Studio Mauguio",
+    alt: "Cours L'Integral Pilates Reformer - Yanna Pilates Studio Mauguio",
+    color: "bg-[#9cac8b]/15 border-[#9cac8b]/30",
+    tagColor: "text-[#6b7d5e]",
   },
   {
-    title: "Seance Privee",
-    subtitle: "1 a 2 personnes",
-    desc: "Un accompagnement sur-mesure avec votre instructrice. Programme adapte a vos objectifs : remise en forme, reeducation, performance.",
-    forWho: "Sur mesure",
-    duration: "55 min",
-    image: "/images/studio-2.webp",
-    alt: "Seance privee de Pilates Reformer - Yanna Pilates Studio",
-  },
-  {
-    title: "Duo Reformer",
-    subtitle: "2 personnes",
-    desc: "Partagez un moment privilegie a deux. Ideal entre amies, en couple ou mere-fille. Progressez ensemble dans une atmosphere intime.",
+    title: "Abs & Glutes",
+    subtitle: "Cible & tonique",
+    desc: "Le combo incontournable pour un ventre tonique et des fessiers sculptes. Un cours cible sur le centre et le bas du corps. On travaille en profondeur les abdos et les fessiers avec des sequences controlees.",
     forWho: "Tous niveaux",
-    duration: "55 min",
+    image: "/images/studio-2.webp",
+    alt: "Cours Abs & Glutes Pilates Reformer - Yanna Pilates Studio",
+    color: "bg-[#d4a5a5]/15 border-[#d4a5a5]/30",
+    tagColor: "text-[#b07878]",
+  },
+  {
+    title: "Cardio Sculpt",
+    subtitle: "Intense & dynamique",
+    desc: "Le cours le plus intense du studio. Allie force et cardio pour bruler en profondeur. Un cours dynamique qui combine renforcement musculaire profond et phases cardio explosives.",
+    forWho: "Intermediaire & avance",
     image: "/images/studio-8.webp",
-    alt: "Seance duo Pilates Reformer - Yanna Pilates Studio",
+    alt: "Cours Cardio Sculpt Pilates Reformer - Yanna Pilates Studio",
+    color: "bg-[#c9a84c]/15 border-[#c9a84c]/30",
+    tagColor: "text-[#a08530]",
   },
 ];
 
@@ -47,7 +50,7 @@ export default function Cours() {
         <StaggerContainer className="grid grid-cols-1 lg:grid-cols-3 gap-10" staggerDelay={0.15}>
           {cours.map((c, i) => (
             <StaggerItem key={i}>
-              <div className="group h-full bg-white rounded-3xl overflow-hidden border border-beige-200/30 transition-all duration-500 hover:shadow-2xl hover:shadow-gold-400/5 hover:-translate-y-2">
+              <div className={`group h-full rounded-3xl overflow-hidden border transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 ${c.color}`}>
                 <div className="relative aspect-[4/3] bg-beige-100/50">
                   <Image
                     src={c.image}
@@ -55,13 +58,10 @@ export default function Cours() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute top-5 right-5 bg-white/90 backdrop-blur-sm rounded-full px-5 py-2">
-                    <span className="font-sans text-[11px] font-medium text-gold-600">{c.duration}</span>
-                  </div>
                 </div>
 
                 <div className="p-10">
-                  <span className="font-sans text-[10px] font-semibold uppercase tracking-[4px] text-gold-500">
+                  <span className={`font-sans text-[10px] font-semibold uppercase tracking-[4px] ${c.tagColor}`}>
                     {c.subtitle}
                   </span>
                   <h3 className="font-serif text-2xl font-semibold text-charcoal mt-3 mb-5">

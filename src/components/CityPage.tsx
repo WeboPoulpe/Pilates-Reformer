@@ -84,16 +84,16 @@ export default function CityPage({
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                title: "Cours en petit groupe",
-                desc: "4 a 6 personnes max. pour un suivi personnalise sur machines Reformer.",
+                title: "Cours sur Reformer",
+                desc: "Un suivi personnalise sur machines Reformer dans un cadre intimiste.",
               },
               {
                 title: "Seances privees",
                 desc: "Accompagnement individuel adapte a vos objectifs specifiques.",
               },
               {
-                title: "Bar a Matcha & Boutique",
-                desc: "Detendez-vous apres votre seance avec nos boissons bien-etre.",
+                title: "Espace Detente & Boutique",
+                desc: "Prolongez l'experience avec nos boissons Bio, infusions et jus naturels.",
               },
             ].map((service, i) => (
               <div

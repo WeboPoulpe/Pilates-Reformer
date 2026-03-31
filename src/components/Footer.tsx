@@ -17,7 +17,7 @@ export default function Footer() {
             />
             <p className="text-sm leading-[1.9] text-beige-300/70 font-light">
               Studio haut de gamme de Pilates Reformer a Mauguio, pres de Montpellier.
-              Seances en petit groupe et cours prives.
+              Seances collectives et cours prives.
             </p>
           </div>
 

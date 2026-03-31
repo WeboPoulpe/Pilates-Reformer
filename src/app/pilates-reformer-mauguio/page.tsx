@@ -4,7 +4,7 @@ import CityPage from "@/components/CityPage";
 export const metadata: Metadata = {
   title: "Pilates Reformer Mauguio | Studio Yanna Pilates",
   description:
-    "Studio de Pilates Reformer haut de gamme a Mauguio (34130). Cours en petit groupe et seances privees. Parking gratuit, zone Aeroport/Frejorgues. Reservez votre seance decouverte !",
+    "Studio de Pilates Reformer haut de gamme a Mauguio (34130). Cours collectifs et seances privees. Parking gratuit, zone Aeroport/Frejorgues. Reservez votre seance decouverte !",
   keywords: ["Pilates Reformer Mauguio", "Pilates Mauguio", "studio Pilates Mauguio", "cours Pilates 34130"],
 };
 
@@ -14,7 +14,7 @@ export default function PilatesMauguio() {
       city="Mauguio"
       slug="pilates-reformer-mauguio"
       distance="0 min"
-      description="Bienvenue chez Yanna Pilates Studio, votre studio de Pilates Reformer haut de gamme a Mauguio. Situe dans la zone Aeroport/Frejorgues, decouvrez une approche personnalisee du mouvement en petit groupe ou en seance privee, dans un cadre zen et inspirant."
+      description="Bienvenue chez Yanna Pilates Studio, votre studio de Pilates Reformer haut de gamme a Mauguio. Situe dans la zone Aeroport/Frejorgues, decouvrez une approche personnalisee du mouvement en seance collective ou privee, dans un cadre zen et inspirant."
       localInfo="Yanna Pilates Studio est implante au coeur de Mauguio, dans la zone dynamique de l'Aeroport/Frejorgues. Profitez d'un acces direct, d'un parking gratuit et d'un studio entierement equipe de machines Reformer derniere generation. Un lieu pensee pour votre bien-etre, a deux pas de chez vous."
       faqItems={[
         {
@@ -23,7 +23,7 @@ export default function PilatesMauguio() {
         },
         {
           question: "Quels types de cours de Pilates sont proposes a Mauguio ?",
-          answer: "Nous proposons des cours de Pilates Reformer en petit groupe (4 a 6 personnes), des seances privees individuelles et des cours duo. Tous les niveaux sont les bienvenus, du debutant a l'avance.",
+          answer: "Nous proposons des cours de Pilates Reformer collectifs (L'Integral, Abs & Glutes, Cardio Sculpt), des seances privees individuelles et des cours duo. Tous les niveaux sont les bienvenus, du debutant a l'avance.",
         },
         {
           question: "Combien coute un cours de Pilates Reformer a Mauguio ?",

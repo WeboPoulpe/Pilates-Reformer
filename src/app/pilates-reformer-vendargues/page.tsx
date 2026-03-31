@@ -4,7 +4,7 @@ import CityPage from "@/components/CityPage";
 export const metadata: Metadata = {
   title: "Pilates Reformer Vendargues | Studio Yanna Pilates",
   description:
-    "Studio de Pilates Reformer pres de Vendargues. Cours en petit groupe et seances privees a Mauguio, a quelques minutes de Vendargues. Parking gratuit.",
+    "Studio de Pilates Reformer pres de Vendargues. Cours collectifs et seances privees a Mauguio, a quelques minutes de Vendargues. Parking gratuit.",
   keywords: ["Pilates Reformer Vendargues", "Pilates Vendargues", "studio Pilates pres Vendargues"],
 };
 
@@ -14,7 +14,7 @@ export default function PilatesVendargues() {
       city="Vendargues"
       slug="pilates-reformer-vendargues"
       distance="10 minutes"
-      description="Depuis Vendargues, rejoignez facilement Yanna Pilates Studio a Mauguio en 10 minutes. Un studio de Pilates Reformer haut de gamme avec des cours en petit groupe et des seances personnalisees."
+      description="Depuis Vendargues, rejoignez facilement Yanna Pilates Studio a Mauguio en 10 minutes. Un studio de Pilates Reformer haut de gamme avec des cours collectifs et des seances personnalisees."
       localInfo="Vendargues est a seulement 10 minutes du studio via la D613. Les residentes de Vendargues trouvent chez Yanna Pilates un espace de qualite pour pratiquer le Pilates Reformer, avec un equipement haut de gamme et une instructrice certifiee."
       faqItems={[
         {
@@ -23,7 +23,7 @@ export default function PilatesVendargues() {
         },
         {
           question: "Le Pilates Reformer est-il adapte aux debutants de Vendargues ?",
-          answer: "Absolument ! Nos cours sont accessibles a tous les niveaux. Priscillia adapte chaque exercice en fonction de votre condition physique. Nous recommandons de commencer par une seance decouverte.",
+          answer: "Absolument ! Nos cours sont accessibles a tous les niveaux. Votre instructrice adapte chaque exercice en fonction de votre condition physique. Nous recommandons de commencer par une seance decouverte.",
         },
         {
           question: "Quels sont les tarifs pour les cours de Pilates pres de Vendargues ?",

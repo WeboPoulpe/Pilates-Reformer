@@ -12,17 +12,17 @@ const temoignages = [
   {
     name: "Catherine L.",
     role: "Retraitee, 62 ans",
-    text: "Je cherchais une activite douce pour maintenir ma mobilite. Le studio est magnifique, l'ambiance zen et Priscillia est une instructrice exceptionnelle.",
+    text: "Je cherchais une activite douce pour maintenir ma mobilite. Le studio est magnifique, l'ambiance zen et l'instructrice est exceptionnelle.",
   },
   {
     name: "Marine D.",
     role: "Sportive, 28 ans",
-    text: "Le Reformer est un complement parfait a mon entrainement. Les petits groupes permettent un vrai suivi. Et le bar a matcha apres la seance, c'est le petit plus !",
+    text: "Le Reformer est un complement parfait a mon entrainement. Le suivi est vraiment personnalise. Et l'espace detente apres la seance, c'est le petit plus !",
   },
   {
     name: "Julie R.",
     role: "Maman, 38 ans",
-    text: "Reprise post-grossesse ideale. Priscillia adapte chaque exercice a mon niveau et je vois des resultats semaine apres semaine.",
+    text: "Reprise post-grossesse ideale. L'instructrice adapte chaque exercice a mon niveau et je vois des resultats semaine apres semaine.",
   },
 ];
 

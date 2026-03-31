@@ -23,7 +23,7 @@ export default function PolitiqueConfidentialite() {
               Le responsable du traitement des donnees personnelles collectees sur le site yanna-pilates.fr est :
             </p>
             <ul className="list-disc pl-6 space-y-1 mt-2">
-              <li><strong>Priscillia Bunoust</strong> - Yanna Pilates Studio</li>
+              <li><strong>Yanna Pilates Studio</strong></li>
               <li>Zone Aeroport / Frejorgues, 34130 Mauguio, France</li>
               <li>Email : priscillia.saihi@hotmail.fr</li>
               <li>Telephone : +33 6 99 10 17 41</li>

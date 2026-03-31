@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | Yanna Pilates Studio",
   },
   description:
-    "Studio haut de gamme de Pilates Reformer a Mauguio, pres de Montpellier. Cours en petit groupe (4-6 pers.) et seances privees. Fonde par Priscillia Bunoust. Parking gratuit.",
+    "Studio haut de gamme de Pilates Reformer a Mauguio, pres de Montpellier. Cours collectifs et seances privees. Parking gratuit.",
   keywords: [
     "Pilates Reformer",
     "Pilates Reformer Montpellier",
@@ -34,17 +34,16 @@ export const metadata: Metadata = {
     "Pilates Baillargues",
     "studio Pilates",
     "cours Pilates",
-    "Priscillia Bunoust",
     "Yanna Pilates",
   ],
-  authors: [{ name: "Priscillia Bunoust" }],
+  authors: [{ name: "Yanna Pilates Studio" }],
   openGraph: {
     type: "website",
     locale: "fr_FR",
     siteName: "Yanna Pilates Studio",
     title: "Yanna Pilates Studio | Pilates Reformer Mauguio - Montpellier",
     description:
-      "Studio haut de gamme de Pilates Reformer a Mauguio. Cours en petit groupe et seances privees. Parking gratuit, zone Aeroport/Frejorgues.",
+      "Studio haut de gamme de Pilates Reformer a Mauguio. Cours collectifs et seances privees. Parking gratuit, zone Aeroport/Frejorgues.",
   },
   robots: {
     index: true,

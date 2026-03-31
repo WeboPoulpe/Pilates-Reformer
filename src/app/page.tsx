@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import Concept from "@/components/Concept";
 import CTABanner from "@/components/CTABanner";
 import Cours from "@/components/Cours";
+import Schedule from "@/components/Schedule";
 import Tarifs from "@/components/Tarifs";
 import Temoignages from "@/components/Temoignages";
 import FAQ from "@/components/FAQ";
@@ -14,6 +15,7 @@ export default function Home() {
       <Concept />
       <CTABanner />
       <Cours />
+      <Schedule />
       <Tarifs />
       <Temoignages />
       <FAQ />

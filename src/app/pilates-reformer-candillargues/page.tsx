@@ -4,7 +4,7 @@ import CityPage from "@/components/CityPage";
 export const metadata: Metadata = {
   title: "Pilates Reformer Candillargues | Studio Yanna Pilates",
   description:
-    "Studio de Pilates Reformer pres de Candillargues. Cours en petit groupe et seances privees a Mauguio, a quelques minutes de Candillargues. Parking gratuit.",
+    "Studio de Pilates Reformer pres de Candillargues. Cours collectifs et seances privees a Mauguio, a quelques minutes de Candillargues. Parking gratuit.",
   keywords: ["Pilates Reformer Candillargues", "Pilates Candillargues", "studio Pilates pres Candillargues"],
 };
 
@@ -14,8 +14,8 @@ export default function PilatesCandillargues() {
       city="Candillargues"
       slug="pilates-reformer-candillargues"
       distance="8 minutes"
-      description="Habitants de Candillargues, decouvrez le Pilates Reformer chez Yanna Pilates Studio a Mauguio, a seulement 8 minutes de chez vous. Un studio premium pour des seances en petit groupe ou en prive."
-      localInfo="Candillargues est a 8 minutes de notre studio de Mauguio. Les pratiquantes de Candillargues beneficient d'un cadre haut de gamme, d'un equipement professionnel et de l'expertise de Priscillia Bunoust pour atteindre leurs objectifs de bien-etre."
+      description="Habitants de Candillargues, decouvrez le Pilates Reformer chez Yanna Pilates Studio a Mauguio, a seulement 8 minutes de chez vous. Un studio premium pour des seances collectives ou en prive."
+      localInfo="Candillargues est a 8 minutes de notre studio de Mauguio. Les pratiquantes de Candillargues beneficient d'un cadre haut de gamme, d'un equipement professionnel et de l'expertise de notre equipe pour atteindre leurs objectifs de bien-etre."
       faqItems={[
         {
           question: "Quelle est la distance entre Candillargues et le studio ?",

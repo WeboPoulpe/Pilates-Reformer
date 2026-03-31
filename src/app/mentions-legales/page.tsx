@@ -23,7 +23,7 @@ export default function MentionsLegales() {
               Le site <strong>yanna-pilates.fr</strong> est edite par :
             </p>
             <ul className="list-disc pl-6 space-y-1 mt-2">
-              <li><strong>Nom :</strong> Priscillia Bunoust</li>
+              <li><strong>Nom :</strong> Yanna Pilates Studio</li>
               <li><strong>Statut :</strong> Entrepreneur individuel</li>
               <li><strong>Siege social :</strong> Zone Aeroport / Frejorgues, 34130 Mauguio, France</li>
               <li><strong>Telephone :</strong> +33 6 99 10 17 41</li>
@@ -38,7 +38,7 @@ export default function MentionsLegales() {
               2. Directrice de la publication
             </h2>
             <p>
-              Priscillia Bunoust, en qualite de fondatrice et gerante de Yanna Pilates Studio.
+              La fondatrice et gerante de Yanna Pilates Studio.
             </p>
           </section>
 
@@ -64,7 +64,7 @@ export default function MentionsLegales() {
               intellectuelle. Toute reproduction, representation, modification, publication, transmission
               ou denaturation, totale ou partielle, du site ou de son contenu, par quelque procede que
               ce soit, et sur quelque support que ce soit, est interdite sans l&apos;autorisation ecrite
-              prealable de Priscillia Bunoust.
+              prealable de Yanna Pilates Studio.
             </p>
           </section>
 
