@@ -57,7 +57,7 @@ export default function Concept() {
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8" staggerDelay={0.12}>
           {features.map((feature, i) => (
             <StaggerItem key={i}>
-              <div className="group text-center px-6 py-12 rounded-3xl bg-beige-50/60 border border-beige-200/30 transition-all duration-500 hover:shadow-xl hover:shadow-gold-400/5 hover:-translate-y-2 hover:bg-beige-100/80">
+              <div className="group h-full text-center px-6 py-12 rounded-3xl bg-beige-50/60 border border-beige-200/30 transition-all duration-500 hover:shadow-xl hover:shadow-gold-400/5 hover:-translate-y-2 hover:bg-beige-100/80">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gold-400/10 text-gold-500 mb-8 group-hover:bg-gold-400/20 transition-colors duration-500">
                   <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d={feature.icon} />
