@@ -11,7 +11,7 @@ export default function Hero() {
     <section className="relative min-h-[110vh] flex items-center justify-center overflow-hidden">
       {/* Background image */}
       <Image
-        src="/images/studio-1.webp"
+        src="/images/studio-3.webp"
         alt="Pilates Reformer - Yanna Pilates Studio Mauguio"
         fill
         priority
