@@ -20,21 +20,6 @@ export default function Hero() {
       <div className="absolute inset-0 bg-stone-900/20" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-8 md:px-12 py-40 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease }}
-          className="mb-10"
-        >
-          <Image
-            src="/logo.webp"
-            alt="Yanna Pilates Studio"
-            width={120}
-            height={120}
-            className="mx-auto rounded-sm"
-          />
-        </motion.div>
-
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
