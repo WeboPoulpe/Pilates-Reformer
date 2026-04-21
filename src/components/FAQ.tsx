@@ -12,8 +12,8 @@ const faqItems = [
   { question: "Le Pilates Reformer est-il adapte apres une blessure ?", answer: "Oui, il est particulierement recommande en reeducation post-blessure. Le travail sur machine permet un controle precis du mouvement et de la resistance. Consultez votre medecin avant de commencer." },
   { question: "Ou se situe le studio et y a-t-il un parking ?", answer: "Yanna Pilates Studio est situe a Mauguio, zone Aeroport/Frejorgues, pres de Montpellier. Parking gratuit. Facilement accessible depuis Baillargues, Vendargues, Mudaison, Lansargues et Candillargues." },
   { question: "Comment reserver une seance ?", answer: "Reservez directement en ligne via notre plateforme. Le paiement se fait en ligne par carte bancaire (Stripe). Vous pouvez rejoindre une liste d'attente si le cours est complet." },
-  { question: "Quels sont les horaires ?", answer: "Le studio est ouvert du lundi au samedi, de 8h a 20h. Consultez notre planning en ligne pour les creneaux disponibles." },
-  { question: "Proposez-vous des cours d'essai ?", answer: "Oui ! Nous proposons une seance decouverte pour tester le Pilates Reformer et decouvrir notre studio." },
+  { question: "Quels sont les horaires et jours d'ouverture ?", answer: "Yanna Pilates Studio est un espace dedie 7j/7. Nous sommes ouverts du Lundi au Dimanche, avec des creneaux commencant des 7h30 pour les seances matinales jusqu'a 20h pour les seances en soiree. Consultez notre planning en temps reel pour tous les details." },
+  { question: "Proposez-vous des cours d'essai ?", answer: "Oui ! Pour toute premiere experience, nous proposons une offre de lancement exclusive : 1 cours achete (25 EUR) = 1 cours offert, soit deux seances pour decouvrir le studio et notre methode. Nous avons egalement un Pack Decouverte : 2 semaines de cours illimites (49 EUR). Ces offres sont parfaites pour vous lancer dans l'aventure Yanna Pilates." },
 ];
 
 export default function FAQ() {

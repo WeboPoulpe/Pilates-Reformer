@@ -17,14 +17,14 @@ export default function Hero() {
         priority
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-stone-900/20" />
+      <div className="absolute inset-0 bg-gradient-to-b from-stone-900/60 via-stone-900/45 to-stone-900/55" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-8 md:px-12 py-40 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15, ease }}
-          className="font-serif text-5xl md:text-7xl lg:text-8xl font-light leading-[1.05] text-white mb-10"
+          className="font-serif text-5xl md:text-7xl lg:text-8xl font-light leading-[1.05] text-white mb-10 drop-shadow-[0_2px_20px_rgba(0,0,0,0.55)]"
         >
           Le mouvement{" "}
           <span className="font-semibold italic text-[#d4af37]">
@@ -41,7 +41,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.35, ease }}
-          className="font-sans text-base md:text-lg text-white/80 font-light leading-relaxed max-w-3xl mx-auto mb-14"
+          className="font-sans text-base md:text-lg text-white/90 font-light leading-relaxed max-w-3xl mx-auto mb-14 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"
         >
           Bienvenue chez Yanna Pilates Studio, votre nouvel espace exclusif dedie au bien-etre
           et a la performance a Mauguio. Notre studio propose une approche moderne et technique
@@ -58,15 +58,21 @@ export default function Hero() {
         >
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center px-10 py-5 bg-[#f5f5dc] text-[#4a3728] border border-[#d4af37] font-sans text-xs font-semibold uppercase tracking-[3px] hover:bg-[#d4af37] hover:text-white transition-all duration-300"
+            className="inline-flex items-center justify-center px-8 py-5 bg-[#f5f5dc] text-[#4a3728] border border-[#d4af37] font-sans text-xs font-semibold uppercase tracking-[3px] hover:bg-[#d4af37] hover:text-white transition-all duration-300"
           >
-            Faire une demande
+            Offre Decouverte
           </Link>
           <Link
-            href="/concept"
-            className="inline-flex items-center justify-center px-10 py-5 border border-white/30 text-white font-sans text-xs font-semibold uppercase tracking-[3px] hover:bg-white hover:text-charcoal transition-all duration-300"
+            href="/#planning"
+            className="inline-flex items-center justify-center px-8 py-5 bg-white/10 backdrop-blur-sm border border-white/40 text-white font-sans text-xs font-semibold uppercase tracking-[3px] hover:bg-white hover:text-charcoal transition-all duration-300"
           >
-            Decouvrir le studio
+            Planning
+          </Link>
+          <Link
+            href="/tarifs"
+            className="inline-flex items-center justify-center px-8 py-5 bg-[#d4af37] text-white border border-[#d4af37] font-sans text-xs font-semibold uppercase tracking-[3px] hover:bg-[#b8932a] transition-all duration-300"
+          >
+            Offres d&apos;abonnement
           </Link>
         </motion.div>
 
@@ -79,7 +85,7 @@ export default function Hero() {
         >
           {[
             { value: "3", label: "cours differents" },
-            { value: "6j/7", label: "du lundi au samedi" },
+            { value: "7/7", label: "du lundi au dimanche" },
             { value: "100%", label: "sur Reformer" },
           ].map((stat, i) => (
             <div key={i} className="text-center">

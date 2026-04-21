@@ -103,6 +103,13 @@ export default function Schedule() {
               <p className="font-serif text-4xl font-bold text-[#d4af37]">49 &euro;</p>
             </div>
           </div>
+
+          <p className="mt-6 text-center font-sans text-[10px] text-charcoal-light/50 font-light italic leading-[1.7] max-w-3xl mx-auto">
+            Offres de lancement exclusives reservees aux nouveaux clients. Valables une seule fois par personne.
+            Ces offres sont valables pendant une duree d&apos;un mois apres le premier cours effectue. Les deux
+            semaines illimitees commencent a la date de votre premiere reservation. Les cours inclus dans l&apos;offre
+            &laquo;&nbsp;1 achete = 1 offert&nbsp;&raquo; ne sont pas remboursables.
+          </p>
         </FadeIn>
 
         {/* Planning grid */}

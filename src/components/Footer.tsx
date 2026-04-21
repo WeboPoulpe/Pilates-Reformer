@@ -11,9 +11,9 @@ export default function Footer() {
             <Image
               src="/logo.webp"
               alt="Yanna Pilates Studio"
-              width={120}
-              height={120}
-              className="h-20 w-auto rounded-sm mb-6 brightness-110"
+              width={200}
+              height={100}
+              className="h-24 w-auto mb-6 brightness-0 invert"
             />
             <p className="text-sm leading-[1.9] text-beige-300/70 font-light">
               Studio haut de gamme de Pilates Reformer a Mauguio, pres de Montpellier.
@@ -105,7 +105,7 @@ export default function Footer() {
                 <svg className="w-4 h-4 text-gold-400/60 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span>Lun - Sam : 8h - 20h</span>
+                <span>Lun - Dim : 7h30 - 20h</span>
               </li>
             </ul>
           </div>

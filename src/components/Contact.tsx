@@ -31,7 +31,8 @@ export default function Contact() {
                     {
                       icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
                       label: "Horaires",
-                      value: "Lundi au Samedi : 8h - 20h\nDimanche : Ferme",
+                      value: "Lun - Dim : 7h30 - 20h",
+                      extra: "Ouvert 7 jours sur 7",
                     },
                     {
                       icon: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z",
@@ -78,17 +79,17 @@ export default function Contact() {
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-white rounded-2xl py-8 px-6 border border-beige-200/30 text-center">
                   <svg className="w-8 h-8 mx-auto text-gold-500/60 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                  </svg>
-                  <p className="font-sans text-xs font-medium text-charcoal mb-1">Acces facile</p>
-                  <p className="font-sans text-[10px] text-charcoal-light/40">Zone Aeroport</p>
-                </div>
-                <div className="bg-white rounded-2xl py-8 px-6 border border-beige-200/30 text-center">
-                  <svg className="w-8 h-8 mx-auto text-gold-500/60 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
                   </svg>
                   <p className="font-sans text-xs font-medium text-charcoal mb-1">Parking gratuit</p>
                   <p className="font-sans text-[10px] text-charcoal-light/40">Sur place</p>
+                </div>
+                <div className="bg-[#f5f5dc]/60 rounded-2xl py-8 px-6 border border-[#d4af37]/20 text-center">
+                  <svg className="w-8 h-8 mx-auto text-[#d4af37] mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z" />
+                  </svg>
+                  <p className="font-sans text-xs font-medium text-charcoal mb-1">Chaussettes obligatoires</p>
+                  <p className="font-sans text-[10px] text-charcoal-light/50">Modeles techniques au studio : 9&nbsp;&euro;</p>
                 </div>
               </div>
             </div>
@@ -122,7 +123,7 @@ export default function Contact() {
             telephone: "+33699101741",
             email: "priscillia.saihi@hotmail.fr",
             address: { "@type": "PostalAddress", streetAddress: "Zone Aeroport / Frejorgues", addressLocality: "Mauguio", postalCode: "34130", addressCountry: "FR" },
-            openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "08:00", closes: "20:00" }],
+            openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], opens: "07:30", closes: "20:00" }],
             founder: { "@type": "Organization", name: "Yanna Pilates Studio" },
             priceRange: "$$",
             areaServed: ["Mauguio", "Baillargues", "Vendargues", "Mudaison", "Lansargues", "Candillargues", "Montpellier"],

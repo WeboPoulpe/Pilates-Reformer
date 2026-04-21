@@ -40,9 +40,9 @@ export default function Header() {
           <Image
             src="/logo.webp"
             alt="Yanna Pilates Studio"
-            width={48}
-            height={48}
-            className="h-10 w-auto md:h-12 rounded-sm"
+            width={200}
+            height={80}
+            className="h-14 w-auto md:h-20"
             priority
           />
         </Link>

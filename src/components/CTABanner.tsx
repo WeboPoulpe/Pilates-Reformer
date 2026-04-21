@@ -33,7 +33,7 @@ export default function CTABanner() {
             href="/tarifs"
             className="inline-flex items-center justify-center px-12 py-5 bg-gold-500 text-white font-sans text-xs font-semibold uppercase tracking-[3px] hover:bg-gold-600 transition-colors duration-300 shadow-lg shadow-gold-500/20"
           >
-            Reserver ma seance decouverte
+            JE RESERVE
           </Link>
         </FadeIn>
       </div>

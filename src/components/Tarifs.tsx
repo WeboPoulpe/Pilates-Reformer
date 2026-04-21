@@ -91,7 +91,7 @@ export default function Tarifs() {
                   {abo.period}
                 </p>
                 <ul className={`font-sans text-sm space-y-4 mb-12 ${abo.popular ? "text-white/70" : "text-charcoal-light/60"}`}>
-                  {["Acces aux cours Reformer", "Reservation en ligne", "Sans engagement"].map((item, j) => (
+                  {["Acces aux cours Reformer", "Reservation en ligne", "Engagement 6 mois"].map((item, j) => (
                     <li key={j} className="flex items-center justify-center gap-3">
                       <svg className={`w-4 h-4 ${abo.popular ? "text-gold-400" : "text-gold-500"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />

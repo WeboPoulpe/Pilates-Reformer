@@ -8,7 +8,7 @@ const features = [
   {
     icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z",
     title: "Petit groupe",
-    desc: "4 a 6 personnes maximum pour un suivi personnalise et des corrections individuelles.",
+    desc: "Jusqu'a 8 personnes pour un suivi personnalise et des corrections individuelles.",
   },
   {
     icon: "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
@@ -18,7 +18,7 @@ const features = [
   {
     icon: "M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z",
     title: "Espace Detente",
-    desc: "Prolongez l'experience dans notre espace dedie. Large selection de boissons Bio, infusions et jus naturels pour une recuperation optimale.",
+    desc: "Prolongez l'experience avec nos jus detox, jus naturels bio, infusions et boissons selectionnees pour une recuperation optimale.",
   },
   {
     icon: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z",
@@ -48,8 +48,9 @@ export default function Concept() {
               />
             </div>
             <p className="font-sans text-base md:text-lg text-charcoal-light/70 font-light leading-[1.9] max-w-xl text-center md:text-left">
-              Yanna Pilates Studio propose une approche personnalisee du mouvement
-              en seance collective ou privee. Un lieu ou corps et esprit se reconnectent.
+              Liberez votre puissance avec une approche dynamique du Pilates Reformer.
+              A la croisee du renforcement profond et de l&apos;intensite athletique,
+              Yanna Pilates Studio sculpte votre silhouette et booste votre vitalite.
             </p>
           </div>
         </FadeIn>
@@ -107,6 +108,7 @@ export default function Concept() {
           <div className="rounded-2xl bg-[#f5f5dc]/60 border border-[#d4af37]/20 px-8 py-6 text-center">
             <p className="font-sans text-sm text-charcoal font-medium">
               Pour votre confort et l&apos;hygiene des machines, le port de chaussettes est obligatoire au sein du studio.
+              Des modeles techniques sont disponibles au studio au prix de <strong>9&nbsp;&euro;</strong>.
             </p>
           </div>
         </FadeIn>
